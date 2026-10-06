@@ -212,7 +212,20 @@ apksigner verify --verbose signed.apk
 
 | 文件 | 说明 |
 |------|------|
-| `花瓣测速_v4.9.0.119去高危版.apk` | 已修复的安装包 |
+| `花瓣测速_v4.9.0.119去高危版.apk` | 本地安装包文件名 |
+| `Petalspeed_v4.9.0.119_NoHighRisk.apk` | Release 下载资源名（见下方说明） |
 | `README.md` | 本说明文档 |
 
 原版 APK 与本项目的中间产物（反编译源码、签名包等）不随仓库分发。
+
+### 安装包获取
+
+APK 以 **Release 资源**形式分发：
+
+- Release 页面：<https://github.com/zhouzt0121/petalspeed_fixed/releases/tag/v4.9.0.119>
+- 直接下载：<https://github.com/zhouzt0121/petalspeed_fixed/releases/download/v4.9.0.119/Petalspeed_v4.9.0.119_NoHighRisk.apk>
+
+> **为什么文件名是英文？**
+> GitHub Release 资源接口会在服务端过滤非 ASCII 字符（纯中文名会被重写为 `default.apk`），
+> 因此仓库内使用 ASCII 文件名 `Petalspeed_v4.9.0.119_NoHighRisk.apk` 以保证下载稳定性。
+> 下载后可自行重命名为 `花瓣测速_v4.9.0.119去高危版.apk`，不影响安装。
